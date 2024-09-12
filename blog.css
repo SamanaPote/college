@@ -1,0 +1,150 @@
+.container-blog {
+  display: flex;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("img/background.jpg");
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.first-section h1 {
+  font-size: 8vh;
+}
+.blog {
+  display: flex;
+  gap: 50px;
+  padding: 20px 100px;
+  margin-top: 50px;
+}
+.blog-left {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  width: 60%;
+}
+.blog-left h3 {
+  font-size: 5vh;
+}
+.blog-left p {
+  font-size: 2.5vh;
+}
+.blog-left img {
+  width: 500px;
+}
+
+.blog-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  padding-right: 300px;
+}
+.blog-left form input {
+  padding: 5px;
+}
+
+.blog-left form input::placeholder {
+  font-size: 2vh;
+}
+.blog-left form textarea {
+  padding: 5px;
+}
+.blog-submit {
+  border: none;
+  padding: 5px 10px;
+  font-size: 3vh;
+  border-radius: 5px;
+  background-color: orange;
+  transition: 0.3s ease-in-out;
+}
+.blog-submit:hover {
+  cursor: pointer;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(15, 180, 42, 1) 35%,
+    rgba(6, 201, 241, 1) 100%
+  );
+
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+/*! Blog right*/
+.blog-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.blog-right h3 {
+  background-color: orange;
+  padding: 5px 30px;
+  text-align: center;
+}
+.blog-right-content {
+  display: flex;
+  align-items: stretch;
+
+  justify-content: space-between;
+  background-color: rgb(207, 200, 200);
+}
+.blog-right-content p {
+  padding: 5px 30px;
+  font-size: 3.1vh;
+}
+/*!------------------------------------------------------------------------------------*/
+/*!------------------------------------------------------------------------------------*/
+/*? Media Query*/
+@media (max-width: 450px) {
+  .container-blog .first-section h1 {
+    font-size: 3.5vh;
+    padding: 20px;
+  }
+  .blog {
+    flex-direction: column-reverse;
+    padding: 10px;
+    justify-content: end;
+    align-items: center;
+  }
+  .blog-right {
+    padding: 0px;
+  }
+  .blog-right-content {
+    gap: 0;
+    align-items: flex-start;
+  }
+  .blog-right-content p {
+    font-size: 2.5vh;
+  }
+  .blog-left img {
+    width: 300px;
+  }
+  .blog-left {
+    align-items: flex-start;
+    align-items: center;
+    width: auto;
+    padding: 70px;
+  }
+  .blog-left p {
+    align-items: center;
+    font-size: 2vh;
+    text-align: start;
+  }
+  .blog-left h3 {
+    font-size: 4vh;
+  }
+  .blog-left form {
+    width: auto;
+    color: red;
+    align-self: flex-start;
+  }
+  .blog-left form {
+    align-items: flex-start;
+  }
+  .blog-left form input {
+    padding: 3px;
+  }
+}

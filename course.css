@@ -1,0 +1,9 @@
+.container-course {
+  display: flex;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("img/background.jpg");
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+}
